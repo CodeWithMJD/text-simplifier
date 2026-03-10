@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مبسّط النصوص العربية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 مبسّط النصوص العربية</h1>
+        <p>أدخل نص الطويل وسأختصر لك أبرز النقاط</p>
+        <textarea id="inputText" placeholder="الصق نصك هنا..." rows="8"></textarea>
+        <div class="controls">
+            <button id="summarizeBtn">لخّص النص</button>
+            <button id="copyBtn">نسخ النتيجة</button>
+        </div>
+        <div class="output-container">
+            <h3>النتيجة:</h3>
+            <div id="output" class="output-box"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
