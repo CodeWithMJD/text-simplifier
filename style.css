@@ -91,3 +91,27 @@ button{
     line-height: 1.6;
     color: #2d3748;
 }
+.stats-box {
+    background: #e6fffa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    text-align: center;
+}
+.stats-box {
+    margin: 20px 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+}
+.support-section {
+    transition: transform 0.3s ease;
+}
+.support-section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+}
