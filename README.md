@@ -59,7 +59,7 @@
 
 1. **انسخ المستودع**
    ```bash
-   git clone https://github.com/CodeWithMJD/text-simplifier.git
+   https://github.com/CodeWithMJD/text-simplifier
 2. افتح المجلد
 
 bash
