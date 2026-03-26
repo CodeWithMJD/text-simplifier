@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مبسّط النصوص العربية</title>
     <link rel="stylesheet" href="style.css">
+    <!-- إضافة مكتبة html2pdf -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div class="container">
@@ -16,49 +18,33 @@
         <div class="controls">
             <button id="summarizeBtn">لخّص النص</button>
             <button id="copyBtn">نسخ النتيجة</button>
+            <button id="pdfBtn">📥 تحميل PDF</button>
         </div>
         
-        <!-- صندوق الإحصائيات -->
         <div id="stats" class="stats-box"></div>
         
-        <div class="output-container">
-            <h3>النتيجة:</h3>
-            <div id="output" class="output-box"></div>
+        <!-- هذا هو العنصر الذي سنحوله إلى PDF -->
+        <div id="pdf-content">
+            <div class="output-container">
+                <h3>النتيجة:</h3>
+                <div id="output" class="output-box"></div>
+            </div>
         </div>
         
-        <!-- ✅ قسم الدعم بالرابط النهائي -->
-        <div class="support-section" style="text-align: center; margin: 40px 0 20px; padding: 30px 20px; background: #f8fafc; border-radius: 20px; border: 2px dashed #cbd5e1;">
-            
-            <!-- أيقونة -->
-            <div style="font-size: 48px; margin-bottom: 10px;">💚</div>
-            
-            <!-- العنوان -->
-            <h3 style="color: #0f172a; font-size: 24px; margin-bottom: 10px;">
-                الأداة مجانية للأبد
-            </h3>
-            
-            <!-- الشرح -->
-            <p style="color: #334155; font-size: 16px; max-width: 500px; margin: 0 auto 20px; line-height: 1.8;">
-                طورت هالأداة عشان تفيد الطلاب والكتّاب والجميع. 
+        <div class="support-section">
+            <div class="support-icon">💚</div>
+            <h3>الأداة مجانية للأبد</h3>
+            <p>
+                طورت هالأداة عشان تفيد الطلاب والكتّاب والجميع.
                 <br>إذا لقيت فيها فائدة، تقدر تدعم استمراريتها بكوفي ☕
             </p>
-            
-            <!-- ✅ زر الدعم بالرابط الجديد -->
-            <a href="https://selar.com/showlove/text-simplifier" target="_blank" style="text-decoration: none;">
-                <button style="background: #f97316; color: white; border: none; padding: 15px 45px; font-size: 18px; border-radius: 50px; cursor: pointer; font-weight: bold; box-shadow: 0 8px 14px rgba(249, 115, 22, 0.3); transition: transform 0.2s; border: 1px solid #fb923c;"
-                        onmouseover="this.style.transform='scale(1.05)'"
-                        onmouseout="this.style.transform='scale(1)'">
-                    ☕ قدِّم لي قهوة
-                </button>
+            <a href="https://selar.com/showlove/text-simplifier" target="_blank" class="support-btn">
+                ☕ قدِّم لي قهوة
             </a>
-            
-            <!-- رابط التواصل -->
-            <p style="color: #64748b; font-size: 14px; margin-top: 20px;">
+            <p class="support-contact">
                 اقتراحاتك تهمني: <strong>@مطور_مبسّط_النصوص</strong>
             </p>
-            
-            <!-- تأثير خفيف -->
-            <div style="font-size: 12px; color: #94a3b8; margin-top: 15px;">
+            <div class="support-note">
                 ⚡ 30 ثانية فقط تدعم استمرارية الأداة
             </div>
         </div>
